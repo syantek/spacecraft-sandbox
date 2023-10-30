@@ -59,4 +59,11 @@ ENV JEOD_HOME="/apps/jeod"
 RUN echo "export TRICK_CFLAGS=${TRICK_CLFAGS}' -I${JEOD_HOME}/models'" >> ~/.bashrc
 RUN echo "export TRICK_CXXFLAGS=${TRICK_CXXLFAGS}' -I${JEOD_HOME}/models'" >> ~/.bashrc
 
+# ------------------------------------------------------------------------------
+# Clone the spacecraft_sandbox repository to work in
+# ------------------------------------------------------------------------------
+# clone into /home in the image
+WORKDIR /home
+RUN git clone https://github.com/syantek/spacecraft-sandbox.git #git@github.com:syantek/spacecraft-sandbox.git
+
 CMD ["/bin/bash"]

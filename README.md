@@ -22,4 +22,5 @@ The recommended development environment is an Ubuntu 20.04 Docker container that
 
 ## Using the Sandbox
 
-Currently, the container loads up ready for you to create Trick + JEOD scenarios with the existing JEOD models. In the very near future, this repository will include some basic models of sensors, actuators, and algorithms, as well as simulation scenarios that put those models together into coherent vehicles in realistic situations.
+Currently, the container loads up ready for you to create Trick + JEOD scenarios with the existing JEOD models.
+The `spacecraft-sandbox` repository is cloned using https at `/home/spacecraft-sandbox`. In the very near future, this repository will include some basic models of sensors, actuators, and algorithms, as well as simulation scenarios that put those models together into coherent vehicles in realistic situations.
